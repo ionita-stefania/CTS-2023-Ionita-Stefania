@@ -1,11 +1,14 @@
 package ro.ase.acs.cts.classes;
 
+import ro.ase.acs.cts.interfaces.Reader;
+
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class DataReader {
+public class DataReader implements Reader {
+    @Override
     public void readData(Connection connection) throws SQLException {
         String sqlSelect = "SELECT * FROM employees";
         Statement statement = connection.createStatement();
