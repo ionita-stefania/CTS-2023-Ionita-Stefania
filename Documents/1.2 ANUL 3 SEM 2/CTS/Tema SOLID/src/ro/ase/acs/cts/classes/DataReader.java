@@ -7,6 +7,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+
 public class DataReader implements Reader {
     @Override
     public void readData(Connection connection) throws SQLException {
